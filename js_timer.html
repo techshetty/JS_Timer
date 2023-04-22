@@ -49,18 +49,6 @@
 	<input type="name" name="" id="cdown" style="margin: 20px;">
 	<button id="startTimer" onclick="tStart()">Start</button></div>
 <h1 id="timer_main" style="display: none;">Starting..</h1></div>
-<script type="text/javascript">
-	tmr=document.getElementById('timer_main');
-	var pretimer = document.getElementById('preTimer');
-	var n;
-	function tStart(){n = parseInt(document.getElementById('cdown').value);pretimer.style.display="none";
-	tmr.style.display = "block";
-	uTime()}
-	function uTime() {if(n>=0){
-		setTimeout(function(){tmr.innerHTML=n;n=n-1;uTime()},1000)
-	}
-	}
-	// uTime();
 </script>
 </body>
 </html>
